@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かげぺー - Links</title>
+  <!-- OGP設定（SNS共有時の表示設定） -->
+  <meta property="og:title" content="かげぺー - Links">
+  <meta property="og:description" content="かげぺーのリンク一覧です。">
+  <meta property="og:type" content="website">
+
+  <!-- アイコン表示用フォント (Font Awesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* 全体リセットおよび基本設定 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f7f9fa;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    /* プロフィール領域 */
+    .profile-image {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .profile-bio {
+      font-size: 0.875rem;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    /* リンクボタン領域 */
+    .links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 14px 20px;
+      background-color: #ffffff;
+      color: #222222;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .link-item a:hover {
+      background-color: #f0f3f6;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .link-item a i {
+      position: absolute;
+      left: 18px;
+      font-size: 1.2rem;
+    }
+
+    /* フッター */
+    footer {
+      margin-top: 32px;
+      font-size: 0.75rem;
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- プロフィール画像 -->
+    <img src="https://assets.st-note.com/production/uploads/images/325612712/profile_2fad6d12ba5b006014730a4b8b34e773.jpg?fit=bounds&format=jpeg&quality=85&width=330" alt="かげぺーのアイコン" class="profile-image">
+    
+    <h1 class="profile-name">『かげぺー』</h1>
+    <p class="profile-bio">最近note始めました。<br>活動内容などはいずれ追加。</p>
+
+    <ul class="links-list">
+      <li class="link-item">
+        <!-- ご自身のnoteページのURLに置き換えてください -->
+        <a href="https://note.com/kagepee" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-pen-nib"></i>
+          note
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      &copy; 2026 kagepee
+    </footer>
+  </div>
+
+</body>
+</html>
